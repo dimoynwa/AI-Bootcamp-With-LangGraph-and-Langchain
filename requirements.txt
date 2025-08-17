@@ -1,5 +1,5 @@
 langchain
-langchain_community
+langchain-community
 langchain-text-splitters
 python-dotenv
 ipykernel
