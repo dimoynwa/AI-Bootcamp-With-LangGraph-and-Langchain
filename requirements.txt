@@ -9,6 +9,13 @@ arxiv
 pymupdf
 wikipedia
 
-# 
+# Embedding specific for Langchain
 langchain-openai
+langchain-ollama
+langchain-huggingface
+langchain-chroma
 chromadb
+faiss-cpu
+
+# HuggingFace
+sentence_transformers
