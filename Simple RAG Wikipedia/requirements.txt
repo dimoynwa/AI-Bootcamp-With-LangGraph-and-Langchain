@@ -1,0 +1,18 @@
+ipykernel
+python-dotenv
+wikipedia
+chromadb
+
+# Langchain
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-chroma
+
+# Streamlit
+streamlit
+
+pydantic>=2.0.0
+pytest>=7.0.0
+pytest-mock>=3.0.0

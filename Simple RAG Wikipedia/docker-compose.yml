@@ -1,0 +1,33 @@
+version: '3.9'
+
+networks:
+  net:
+    driver: bridge
+services:
+  chromadb:
+    image: chromadb/chroma:1.0.21.dev39
+    volumes:
+      - ./chromadb:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma
+      - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-TRUE}
+      - CHROMA_CORS_ALLOW_ORIGINS=["*"]
+      - CHROMA_SERVER_CORS_ALLOW_ORIGINS=["*"]
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    networks:
+      - net
+
+  chromadb-admin:
+    image: fengzhichao/chromadb-admin
+    ports:
+      - "3001:3001"
+    environment:
+      CHROMA_URL: "http://chromadb:8000"
+    networks:
+      - net
+    restart: unless-stopped
+    depends_on:
+      - chromadb
