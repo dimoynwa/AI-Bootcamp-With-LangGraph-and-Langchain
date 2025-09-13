@@ -214,3 +214,6 @@ __marimo__/
 
 # Pickle
 *.pkl
+
+# Memory stores
+*.pckl
