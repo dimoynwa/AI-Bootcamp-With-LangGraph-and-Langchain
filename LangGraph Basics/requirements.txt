@@ -8,8 +8,10 @@ ipykernel
 langchain-openai
 langchain-groq
 langchain-tavily
+langchain-ollama
 
 langgraph-cli[inmem]
 
 arxiv
 wikipedia
+faiss-cpu

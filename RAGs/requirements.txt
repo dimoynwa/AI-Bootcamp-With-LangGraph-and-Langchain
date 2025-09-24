@@ -1,0 +1,21 @@
+langchain
+langchain-community
+langchain-text-splitters
+python-dotenv
+ipykernel
+pypdf
+bs4
+arxiv
+pymupdf
+wikipedia
+
+# Embedding specific for Langchain
+langchain-openai
+langchain-ollama
+langchain-huggingface
+langchain-chroma
+chromadb
+faiss-cpu
+
+# HuggingFace
+sentence_transformers
